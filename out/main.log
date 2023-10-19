@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.9)  16 OCT 2023 13:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.9)  19 OCT 2023 19:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -769,16 +769,29 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.105     \newpage
+l.107     \newpage
                    [1]
 
-LaTeX Warning: Float too large for page by 151.02608pt on input line 178.
+LaTeX Warning: Reference `table:result' on page 2 undefined on input line 109.
+
+
+Overfull \hbox (0.11017pt too wide) in paragraph at lines 109--110
+\T1/cmr/m/n/10 Datat från ana-ly-sen av fil-men vi-sas i ta-bell (se tab-bel lä
+ngst ned i dokumentet)[] 
+ []
+
+
+LaTeX Warning: Float too large for page by 151.02608pt on input line 181.
 
 [2 <./images/img.png (PNG copy)>] [3] [4] (C:/Code\testlatex\out\main.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 626BA1E08D890F5FFB516953898BC83C;852.
 Package logreq Info: Writing requests to 'main.run.xml'.
@@ -786,13 +799,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 17859 strings out of 475247
- 316192 string characters out of 5754016
+ 17863 strings out of 475247
+ 316245 string characters out of 5754016
  1932785 words of memory out of 5000000
  39159 multiletter control sequences out of 15000+600000
  570545 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,10n,81p,679b,1921s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,8n,81p,679b,1921s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\kevin.torneus\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi
 600\eccc1000.pk> <C:\Users\kevin.torneus\AppData\Local\MiKTeX\fonts/pk/ljfour/j
 knappen/ec/dpi600\ecti1000.pk> <C:\Users\kevin.torneus\AppData\Local\MiKTeX\fon
@@ -810,9 +823,9 @@ torneus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 nts/cm/cmmi7.pfb><C:/Users/kevin.torneus/AppData/Local/Programs/MiKTeX/fonts/ty
 pe1/public/amsfonts/cm/cmr10.pfb><C:/Users/kevin.torneus/AppData/Local/Programs
 /MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb>
-Output written on C:/Code\testlatex\out\main.pdf (7 pages, 629601 bytes).
+Output written on C:/Code\testlatex\out\main.pdf (7 pages, 632580 bytes).
 PDF statistics:
- 377 PDF objects out of 1000 (max. 8388607)
- 23 named destinations out of 1000 (max. 500000)
+ 385 PDF objects out of 1000 (max. 8388607)
+ 27 named destinations out of 1000 (max. 500000)
  59 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -11,6 +11,7 @@
 ]{biblatex}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage{booktabs}
 %Källor
 \addbibresource{mall.bib}
 \graphicspath{ {./images/} }
@@ -21,8 +22,8 @@
 \def\course{Fysik 1 150p}
 \def\pretitle{Laboration 1}
 \def\title{Rörelse: Hastighet och acceleration}
-\def\name{Magnus Silverdal}
-\def\username{magnus.silverdal}
+\def\name{Kevin Tornéus}
+\def\username{kevin.torneus}
 \def\email{\username{}@ga.ntig.se}
 \def\graders{Magnus Silverdal}
 
@@ -60,7 +61,7 @@
 
     \begin{otherlanguage}{english}
 	\begin{abstract}
-        This lab report goes over how a small trolley moves when it slides down a tilted plane.
+        This lab report goes over how a small trolley moves when it slides down a tilted plane. By using a variety of methods, a chart can be created, thereafter lots of information becomes availible.
     \end{abstract}
     \end{otherlanguage}
     % Om arbetet är långt har det en innehållsförteckning, annars kan den utelämnas
@@ -100,39 +101,131 @@
             \label{fig:lutandeplan}
         \end{figure}
         
-        Filmen analyserades sedan med mjukvaran Tracker för att få fram en tabell med positionen som funktion av tiden.
+        Filmen analyserades sedan med mjukvaran Tracker för att få fram en tabell med positionen som funktion av tiden. Delar av filmen klipps bort från mätningen då de visar på att vagnen studsar tillbaka.
+
+
     \newpage
 	\section{Analys och beräkning}
-        Datat från analysen av filmen visas i tabell \ref{table:result}
+        Datat från analysen av filmen visas i tabell (se tabbel längst ned i dokumentet)\ref{table:result}
+
     
-
-
         \begin{table}
-            \begin{center}
-            \begin{tabular}{ |c|c| }
-                \hline
-                Position (m) & Tid (s)  \\
-                \hline
-                0 & 0  \\
-                0.1 & 0.02 \\
-                \vdots & \vdots \\
-                \hline
+            \centering
+            \begin{tabular}{ll}
+                \toprule
+                \textbf{t} & \textbf{x} \\
+                \midrule
+                0,00E+00 & 8,79E-03 \\
+                3,33E-02 & 4,42E-02 \\
+                6,67E-02 & 4,43E-02 \\
+                1,00E-01 & -8,96E-03 \\
+                1,33E-01 & 8,76E-03 \\
+                1,67E-01 & 2,05E-02 \\
+                2,00E-01 & 2,06E-02 \\
+                2,33E-01 & 2,11E-02 \\
+                2,67E-01 & 2,34E-02 \\
+                3,00E-01 & 2,54E-02 \\
+                3,33E-01 & 2,85E-02 \\
+                3,67E-01 & 3,21E-02 \\
+                4,00E-01 & 3,65E-02 \\
+                4,33E-01 & 4,18E-02 \\
+                4,67E-01 & 4,83E-02 \\
+                5,00E-01 & 5,53E-02 \\
+                5,33E-01 & 6,34E-02 \\
+                5,67E-01 & 7,24E-02 \\
+                6,00E-01 & 8,20E-02 \\
+                6,33E-01 & 9,25E-02 \\
+                6,67E-01 & 1,04E-01 \\
+                7,00E-01 & 1,16E-01 \\
+                7,33E-01 & 1,29E-01 \\
+                7,67E-01 & 1,43E-01 \\
+                8,00E-01 & 1,57E-01 \\
+                8,33E-01 & 1,73E-01 \\
+                8,67E-01 & 1,89E-01 \\
+                9,00E-01 & 2,06E-01 \\
+                9,33E-01 & 2,24E-01 \\
+                9,67E-01 & 2,43E-01 \\
+                1,00E+00 & 2,62E-01 \\
+                1,03E+00 & 2,82E-01 \\
+                1,07E+00 & 3,02E-01 \\
+                1,10E+00 & 3,35E-01 \\
+                1,13E+00 & 3,57E-01 \\
+                1,17E+00 & 3,80E-01 \\
+                1,20E+00 & 4,02E-01 \\
+                1,23E+00 & 4,27E-01 \\
+                1,27E+00 & 4,52E-01 \\
+                1,30E+00 & 4,58E-01 \\
+                1,33E+00 & 4,61E-01 \\
+                1,37E+00 & 4,91E-01 \\
+                1,40E+00 & 5,20E-01 \\
+                1,43E+00 & 5,57E-01 \\
+                1,47E+00 & 5,93E-01 \\
+                1,50E+00 & 6,13E-01 \\
+                1,53E+00 & 6,34E-01 \\
+                1,57E+00 & 6,68E-01 \\
+                1,60E+00 & 6,95E-01 \\
+                1,63E+00 & 7,25E-01 \\
+                1,67E+00 & 7,57E-01 \\
+                1,70E+00 & 7,87E-01 \\
+                1,73E+00 & 8,37E-01 \\
+                1,77E+00 & 9,05E-01 \\
+                1,80E+00 & 9,59E-01 \\
+                1,83E+00 & 9,82E-01 \\
+                1,87E+00 & 9,79E-01 \\
+                1,90E+00 & 9,85E-01 \\
+                1,93E+00 & 1,01E+00 \\
+                \bottomrule
             \end{tabular}
-                \caption{Mätvärden}
-                \label{table:result}
-            \end{center}
+            \caption{}
+            \label{tab:}
         \end{table}
+
+
+
         
 
-    Datat importeras i Excel och hastigheten beräknas med hjälp av formeln
+    Datat importeras i Excel och medelhastigheten samt medelacceleration beräknas med hjälp av formeln
     \begin{equation}
         v_m = \frac{\Delta s}{\Delta t}
     \end{equation}
+
+    Denna data visas i tabellens mätvärden stoppas sedan in i denna formel:
+     \begin{equation}
+    {\Delta s}
+     \end{equation}
+    = s2 - s1 = 1,01m - 0,0292m = 0,9808m
+    (skilladen i sträcka i meter genom hela förloppet)
+    \begin{equation}
+    {\Delta t}
+    \end{equation}
+    = t2 - t1 = 1,93s - 0s = 1,93s
+    (skilladen i tid i sekunder genom hela förloppet)
+    0,9808/1,93 = 0,5082m/s
+
+    Medelacceleration:
+
+\begin{equation}
+    a_m = \frac{\Delta v}{\Delta t}
+\end{equation}
+
+\begin{equation}
+{\Delta v}
+\end{equation}
+= 0,5082m/s
+
+\begin{equation}
+{\Delta t}
+\end{equation}
+= 1,93s
+
+0,5082m/s / 1,93s = 0,263m/s2
     
     \section{Slutsats och resultat} 
-        Resultatet av beräkningarna illustreras i graferna 2 och 3
+        Resultatet av mätvärdena illustreras i grafen på sid. 3 i dokumentet.
+        Enligt beräkningarna gjorde baserat på värdena i mättabellen så hade vagnen en medelhastighet på ungeför 0,51 m/s. Vagnen hade även en medelaccelation på ungefär 0,263 m/s2
     \section{Diskussion} 
-    Resultatet är perfekt...
+    Metoden som användes i denna labboration med att mäta mätvärdena har viss felmarginal eftersom att ett program på datorn som gissar position i meter genom video aldrig kommer vara helt korrekt.
+
 
     
     \printbibliography
